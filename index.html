@@ -127,6 +127,14 @@
     .trip-button:hover {
       background-color: #005fa3;
     }
+    .planning-image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      display: block;
+    }
 
     /* 🎯 Mobile-specific improvements */
     @media (max-width: 768px) {
@@ -180,6 +188,11 @@
         margin-top: 0.5rem;
         max-width: 100%;
       }
+      
+      .planning-image {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
   </style>
@@ -205,12 +218,10 @@
         </ul>
       </div>
       <div class="column">
+        <img src="illustration.jpg" alt="Illustration" class="planning-image" />
+        <div style="height: 1rem;"></div>
         <blockquote>I haven’t been everywhere — but I know how to plan for anywhere.</blockquote>
         <p>📧 <strong>Contact:</strong> <a href="mailto:travelwtianbi@gmail.com">travelwtianbi@gmail.com</a></p>
-        <div class="trip-images">
-          <img src="trip1.jpg" alt="Trip screenshot 1" />
-          <img src="trip2.jpg" alt="Trip screenshot 2" />
-        </div>
       </div>
     </div>
   </section>
