@@ -50,13 +50,19 @@
     .column {
       flex: 1 1 300px;
       min-width: 280px;
-    
-      /* ✅ center content inside the card */
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      text-align: center;
+      text-align: left;
+    
+      /* 🧾 Card styling */
+      background-color: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      padding: 1rem 1rem;         /* ⬅️ Shrink horizontal padding */
+      margin-bottom: 0.75rem;
+      max-width: 100%;
     }
 
     .column img {
@@ -158,22 +164,14 @@
         flex-direction: column;
         gap: 0.75rem;
         margin-top: 0.25rem;
-        align-items: center;       /* ✅ vertical alignment context */
-        justify-content: center;   /* ✅ center stacked cards */
+        align-items: stretch; 
       }
     
       .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    
-        background-color: #fafafa;
         padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
         margin-bottom: 0.75rem;
+        align-items: flex-start;  /* ✅ keep text left-aligned on mobile */
+        text-align: left;
       }
 
       .column ul,
@@ -224,24 +222,26 @@
   </header>
 
   <section>
-    <h2>🧭 My Planning Style</h2>
     <div class="columns">
+      
+      <!-- LEFT COLUMN -->
       <div class="column">
+        <h2>🧭 My Planning Style</h2>
         <ul>
           <li>🌍 Traveled across 10+ national parks and countries like Japan, Korea, Portugal, and Mexico</li>
           <li>👥 Flexible, low-stress trips for solo travelers, couples, and small groups</li>
           <li>✨ Clear, efficient, and well-paced — built on research and structure you can trust</li>
         </ul>
       </div>
-      
+  
+      <!-- RIGHT COLUMN -->
       <div class="column">
         <img src="hawaii.jpg" alt="Planning illustration" class="planning-image" />
         <div style="margin-top: 1rem;"></div>
         <blockquote>I haven’t been everywhere — but I know how to plan for anywhere.</blockquote>
-        <div style="margin-top: 1rem;"></div>
         <p>📧 <strong>Contact:</strong> <a href="mailto:travelwtianbi@gmail.com">travelwtianbi@gmail.com</a></p>
       </div>
-      
+  
     </div>
   </section>
 
