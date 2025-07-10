@@ -43,12 +43,20 @@
       flex-wrap: wrap;
       gap: 2rem;
       margin-top: 1rem;
-      align-items: flex-start;
+      align-items: center;      /* ✅ vertical center */
+      justify-content: center;  /* ✅ center both columns if needed */
     }
-
+    
     .column {
       flex: 1 1 300px;
       min-width: 280px;
+    
+      /* ✅ center content inside the card */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     .column img {
@@ -150,9 +158,17 @@
         flex-direction: column;
         gap: 0.75rem;
         margin-top: 0.25rem;
+        align-items: center;       /* ✅ vertical alignment context */
+        justify-content: center;   /* ✅ center stacked cards */
       }
-
+    
       .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
         background-color: #fafafa;
         padding: 1rem;
         border-radius: 8px;
@@ -217,12 +233,15 @@
           <li>✨ Clear, efficient, and well-paced — built on research and structure you can trust</li>
         </ul>
       </div>
+      
       <div class="column">
-        <img src="illustration.jpg" alt="Illustration" class="planning-image" />
-        <div style="height: 1rem;"></div>
+        <img src="hawaii.jpg" alt="Planning illustration" class="planning-image" />
+        <div style="margin-top: 1rem;"></div>
         <blockquote>I haven’t been everywhere — but I know how to plan for anywhere.</blockquote>
+        <div style="margin-top: 1rem;"></div>
         <p>📧 <strong>Contact:</strong> <a href="mailto:travelwtianbi@gmail.com">travelwtianbi@gmail.com</a></p>
       </div>
+      
     </div>
   </section>
 
