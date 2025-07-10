@@ -75,6 +75,20 @@
       margin-bottom: 0.5rem;
     }
 
+    .trip-section {
+      background-color: #f9f9f7;
+      padding: 2rem 1.25rem;
+      border-radius: 12px;
+      max-width: 960px;
+      margin: 0 auto 2rem;
+    }
+    
+    .trip-section h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    
+    /* One trip row */
     .trip-row {
       display: flex;
       align-items: center;
@@ -82,15 +96,20 @@
       margin-bottom: 1.25rem;
     }
     
+    /* Trip image */
     .trip-row img {
-      width: 150px;
-      height: auto;
-      border-radius: 6px;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
       flex-shrink: 0;
     }
     
-    .trip-row p {
-      margin: 0;
+    /* Trip text */
+    .trip-text {
+      font-size: 1rem;
+      line-height: 1.4;
+      max-width: 500px;
     }
 
     /* 🎯 Mobile-specific improvements */
@@ -136,11 +155,14 @@
       }
     
       .trip-row img {
-        width: auto;
-        max-width: 100%;
+        width: 100%;
+        max-height: 180px;
         height: auto;
-        max-height: 180px; /* optional: keeps vertical images smaller */
-        margin-bottom: 0.5rem;
+      }
+    
+      .trip-text {
+        margin-top: 0.5rem;
+        max-width: 100%;
       }
     }
   }
@@ -200,40 +222,27 @@
     </div>
   </section>
 
-  <section>
+  <section class="trip-section">
   <h2>☁ Trips I’ve Loved Planning</h2>
-  <div class="columns">
 
-    <div class="trip-row">
-      <img src="hawaii.jpg" alt="Hawaii trip" />
-      <p>🏝️ Solo trip to Hawaii — 2 weeks of island rhythms and scuba certification 🤿</p>
-    </div>
+  <div class="trip-row">
+    <img src="hawaii.jpg" alt="Hawaii trip" />
+    <div class="trip-text">🏝️ Solo trip to Hawaii — 2 weeks of island rhythms and scuba certification 🤿</div>
+  </div>
 
-    <div class="trip-row">
-      <img src="portugal.jpg" alt="Portugal trip" />
-      <p>🍷 1-week in Portugal — seafood, port wine, and river views</p>
-    </div>
+  <div class="trip-row">
+    <img src="portugal.jpg" alt="Portugal trip" />
+    <div class="trip-text">🍷 1-week in Portugal — seafood, port wine, and river views</div>
+  </div>
 
-    <div class="trip-row">
-      <img src="arches.jpg" alt="Arches & Canyonlands" />
-      <p>🏜️ 2 days in Arches & Canyonlands — sunrise hikes & WFH-friendly</p>
-    </div>
+  <div class="trip-row">
+    <img src="arches.jpg" alt="Arches & Canyonlands trip" />
+    <div class="trip-text">🧗‍♀️ 2 days in Arches & Canyonlands — sunrise hikes & WFH-friendly</div>
+  </div>
 
-    <div class="trip-row">
-      <img src="japan.jpg" alt="Japan trip" />
-      <p>🇯🇵 2 weeks in Japan — city-hopping for food, culture, and quiet</p>
-    </div>
-
-    <div class="trip-row">
-      <img src="california.jpg" alt="California coast" />
-      <p>🌊 1-week California coast — family-friendly stops and golden views</p>
-    </div>
-
-    <div class="trip-row">
-      <img src="puertorico.jpg" alt="Puerto Rico trip" />
-      <p>🌴 4 days in Puerto Rico — rainforest, beach, and a little rum 🍹</p>
-    </div>
-
+  <div class="trip-row">
+    <img src="japan.jpg" alt="Japan trip" />
+    <div class="trip-text">🇯🇵 2 weeks in Japan — city-hopping for food, culture, and quiet</div>
   </div>
 </section>
 
