@@ -146,18 +146,28 @@ ul {
 
 .snapshot-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 3rem;
-  margin: 2rem auto;
   max-width: 1000px;
-  padding: 0 1rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
 }
 
 .snapshot-column {
-  flex: 1 1 400px;
+  flex: 1 1 45%;
   min-width: 300px;
-  max-width: 480px;
+}
+
+.snapshot-column h3 {
+  text-align: center;
+}
+
+.snapshot-column ul {
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
 }
 
 /* === MOBILE STYLING === */
@@ -184,5 +194,10 @@ ul {
   .trip-summary-card .cta-link {
     width: 100%;
     text-align: center;
+  }
+
+  .snapshot-grid {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
