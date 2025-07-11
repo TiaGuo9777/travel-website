@@ -144,6 +144,22 @@ ul {
   padding-left: 1.25rem;
 }
 
+.snapshot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.snapshot-column {
+  flex: 1 1 400px;
+  min-width: 300px;
+  max-width: 480px;
+}
+
 /* === MOBILE STYLING === */
 @media (max-width: 768px) {
   .snapshot-grid {
