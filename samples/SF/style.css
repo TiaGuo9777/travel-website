@@ -180,6 +180,18 @@ ul {
   object-fit: contain;
 }
 
+.optional-stop {
+  background-color: #f9f9f9;
+  border-left: 4px solid #ddd;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+.optional-stop h4 {
+  margin-top: 0;
+}
+
 /* === MOBILE STYLING === */
 @media (max-width: 768px) {
   .snapshot-grid {
