@@ -110,6 +110,22 @@ ul {
   margin-bottom: 0.5rem;
 }
 
+.trip-strategy img.route-map {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.trip-strategy p.centered {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
 /* === ROUTE LAYOUT === */
 .trip-route {
   max-width: 1100px;
@@ -219,6 +235,9 @@ ul {
 @media (max-width: 768px) {
   .snapshot-grid {
     flex-direction: column;
+  }
+  .trip-strategy img.route-map {
+    margin: 1rem 0;
   }
 
   .route-layout {
