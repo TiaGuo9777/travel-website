@@ -192,6 +192,24 @@ ul {
   margin-top: 0;
 }
 
+/* === TOOL SECTION === */
+.trip-tools {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.trip-tools ul {
+  padding-left: 1.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.trip-tools li {
+  margin-bottom: 0.5rem;
+}
+
+
 /* === MOBILE STYLING === */
 @media (max-width: 768px) {
   .snapshot-grid {
