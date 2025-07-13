@@ -194,19 +194,24 @@ ul {
 
 /* === TOOL SECTION === */
 .trip-tools {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.trip-tools ul {
-  padding-left: 1.25rem;
-  margin-top: 0.75rem;
-  margin-bottom: 1rem;
+.trip-tools img.route-map {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
-.trip-tools li {
-  margin-bottom: 0.5rem;
+.trip-tools p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
 }
 
 
